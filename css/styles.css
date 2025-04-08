@@ -22,6 +22,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Header Styles */
 .header {
     background-color: #ffffff;
     height: 80px;
@@ -30,6 +31,91 @@ body {
     align-items: center;
     position: relative;
     z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+.logo a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.pre {
+    color: #3F51B5;
+}
+
+.medica {
+    color: #0091EA;
+}
+
+.logo-text {
+    font-size: 12px;
+    color: #3F51B5;
+    font-weight: 500;
+}
+
+/* Navigation Styles */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #0091EA;
+}
+
+/* App Download Button */
+.app-download {
+    display: flex;
+    align-items: center;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0091EA;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    border: 2px solid #0091EA;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+
+.icon-download {
+    margin-right: 8px;
+    color: #0091EA;
 }
 
 .hero-container {
@@ -45,6 +131,26 @@ body {
 @media (max-width: 768px) {
     .header {
         height: 60px;
+    }
+    
+    .header-container {
+        padding: 0 10px;
+    }
+    
+    .logo h1 {
+        font-size: 22px;
+    }
+    
+    .logo-text {
+        font-size: 10px;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .app-download .download-button span {
+        display: none;
     }
     
     .hero-container {
